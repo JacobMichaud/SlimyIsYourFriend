@@ -5,3 +5,5 @@
 [node name="GridMap" type="GridMap" parent="."]
 
 [node name="AudioListener3D" type="AudioListener3D" parent="GridMap"]
+
+[node name="BoneAttachment3D" type="BoneAttachment3D" parent="GridMap/AudioListener3D"]
