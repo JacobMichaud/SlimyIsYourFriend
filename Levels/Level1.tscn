@@ -1,12 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://b2i23anhl1o61"]
+[gd_scene load_steps=3 format=3 uid="uid://b2i23anhl1o61"]
 
 [ext_resource type="Script" path="res://Scripts/Level1.gd" id="1_sq0vv"]
+[ext_resource type="PackedScene" uid="uid://c24k3fx50hsog" path="res://Barbarian_Player.tscn" id="2_lquka"]
 
 [node name="World" type="Node3D"]
 script = ExtResource("1_sq0vv")
 
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00264606, 0.0865035, 0.460552)
-
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.233079, 0.313364, 3.96391)
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("2_lquka")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00578722, 0, -0.00095737)
