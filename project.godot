@@ -14,6 +14,10 @@ config/name="Jacob and Kevin"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
+[dotnet]
+
+project/assembly_name="Jacob and Kevin"
+
 [editor]
 
 version_control/plugin_name="GitPlugin"
