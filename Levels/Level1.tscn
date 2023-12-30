@@ -3,5 +3,3 @@
 [node name="Node3D" type="Node3D"]
 
 [node name="GridMap" type="GridMap" parent="."]
-
-[node name="AudioListener3D" type="AudioListener3D" parent="GridMap"]
