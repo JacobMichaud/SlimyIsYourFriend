@@ -1,0 +1,128 @@
+[gd_scene load_steps=27 format=3 uid="uid://or5l5176gaos"]
+
+[ext_resource type="MeshLibrary" uid="uid://c6pks3vjd5wri" path="res://Godot GameDev Starter Kit v1.0.0/Gridmap/GridMap_MeshLibrary.tres" id="1_i0ryj"]
+[ext_resource type="PackedScene" uid="uid://vfqqw1d7d831" path="res://Godot GameDev Starter Kit v1.0.0/3D Models/Characters/character_dev.tscn" id="2_c76i6"]
+[ext_resource type="PackedScene" uid="uid://cch8mx450ce4x" path="res://Godot GameDev Starter Kit v1.0.0/3D Models/Obstacles/obstacle_ground_spike_01.tscn" id="2_wy2qa"]
+[ext_resource type="PackedScene" uid="uid://b56167f7l6b3i" path="res://Godot GameDev Starter Kit v1.0.0/3D Models/Props/props_treasure_cheast_01.tscn" id="3_0ayel"]
+[ext_resource type="PackedScene" uid="uid://ddfwx7f8t5k0s" path="res://Godot GameDev Starter Kit v1.0.0/3D Models/Characters/character_boo.tscn" id="3_fsj77"]
+[ext_resource type="PackedScene" uid="uid://ccxy7gjyuwhor" path="res://Godot GameDev Starter Kit v1.0.0/3D Models/Props/props_wooden_barrel_01.tscn" id="4_m7rn3"]
+[ext_resource type="PackedScene" uid="uid://dvnqywsbgr52f" path="res://Godot GameDev Starter Kit v1.0.0/3D Models/Characters/character_blob.tscn" id="4_q4j32"]
+[ext_resource type="PackedScene" uid="uid://ciw4bhh6v2lbu" path="res://Godot GameDev Starter Kit v1.0.0/3D Models/Characters/character_speedy.tscn" id="5_5r7qg"]
+[ext_resource type="PackedScene" uid="uid://bf1nwc7w6jbx2" path="res://Godot GameDev Starter Kit v1.0.0/3D Models/Props/props_wooden_boat_01.tscn" id="5_nlcfo"]
+[ext_resource type="PackedScene" uid="uid://bpmcayxy1tvl" path="res://Godot GameDev Starter Kit v1.0.0/3D Models/Props/props_wooden_bridge_01.tscn" id="6_6xpnk"]
+[ext_resource type="PackedScene" uid="uid://cfg4gb5x4bjtt" path="res://Godot GameDev Starter Kit v1.0.0/3D Models/Props/props_wooden_dock_01.tscn" id="7_pjphx"]
+[ext_resource type="PackedScene" uid="uid://hm811uoq0qig" path="res://Godot GameDev Starter Kit v1.0.0/3D Models/Props/props_flag_03.tscn" id="12_26alx"]
+[ext_resource type="PackedScene" uid="uid://b580ynkhocwhc" path="res://Godot GameDev Starter Kit v1.0.0/3D Models/Props/props_lever_01.tscn" id="13_mhn72"]
+[ext_resource type="PackedScene" uid="uid://b8qo5qdpg4ef7" path="res://Godot GameDev Starter Kit v1.0.0/3D Models/Collectables/collectable_gift_box_01.tscn" id="14_f7mj7"]
+[ext_resource type="PackedScene" uid="uid://sh5rt4328iwy" path="res://Godot GameDev Starter Kit v1.0.0/3D Models/Collectables/collectable_heart_01.tscn" id="15_dy11y"]
+[ext_resource type="PackedScene" uid="uid://pqowisqie7vk" path="res://Godot GameDev Starter Kit v1.0.0/3D Models/Collectables/collectable_diamond_01.tscn" id="16_o15u7"]
+[ext_resource type="PackedScene" uid="uid://ddaqr0q71e24" path="res://Godot GameDev Starter Kit v1.0.0/3D Models/Obstacles/obstacle_gound_socket_01.tscn" id="17_5hs4b"]
+[ext_resource type="PackedScene" uid="uid://k50um1brjuf6" path="res://Godot GameDev Starter Kit v1.0.0/3D Models/Obstacles/obstacle_pole_01.tscn" id="18_aklts"]
+[ext_resource type="PackedScene" uid="uid://gth3b1t160lj" path="res://Godot GameDev Starter Kit v1.0.0/3D Models/Collectables/collectable_coin_02.tscn" id="19_iuyl4"]
+[ext_resource type="PackedScene" uid="uid://bs5vd1y6rf0qf" path="res://Godot GameDev Starter Kit v1.0.0/3D Models/Collectables/collectable_bomb_02.tscn" id="20_3onh3"]
+[ext_resource type="PackedScene" uid="uid://cf0ns1qi082tn" path="res://Godot GameDev Starter Kit v1.0.0/3D Models/Collectables/collectable_star_02.tscn" id="21_d0y6a"]
+[ext_resource type="PackedScene" uid="uid://cpobkp1rbev5h" path="res://Godot GameDev Starter Kit v1.0.0/3D Models/Collectables/collectable_gems_02.tscn" id="22_fffyc"]
+[ext_resource type="PackedScene" uid="uid://cpr8rtv0mdcuk" path="res://Godot GameDev Starter Kit v1.0.0/3D Models/Props/props_spring_jumper_01.tscn" id="23_ey8xn"]
+[ext_resource type="PackedScene" uid="uid://1qqgplafc7v5" path="res://Godot GameDev Starter Kit v1.0.0/3D Models/Props/props_button_01.tscn" id="24_3yi0l"]
+[ext_resource type="PackedScene" uid="uid://df4w6nmiu2o8k" path="res://Godot GameDev Starter Kit v1.0.0/3D Models/Obstacles/obstacle_hanging_hammer_socket_01.tscn" id="25_pfs4f"]
+[ext_resource type="PackedScene" uid="uid://bfnnlr15323re" path="res://Godot GameDev Starter Kit v1.0.0/3D Models/Obstacles/obstacle_round_blade_01.tscn" id="26_fagg8"]
+
+[node name="Level_Design_02" type="Node3D"]
+
+[node name="GridMap" type="GridMap" parent="."]
+mesh_library = ExtResource("1_i0ryj")
+cell_center_y = false
+data = {
+"cells": PackedInt32Array(65530, 0, 1441799, 65532, 0, 1441799, 65534, 0, 1441799, 65534, 1, 1441799, 65534, 65535, 1441799, 65535, 0, 1441799, 0, 0, 1441799, 1, 0, 1441799, 2, 65535, 1441799, 3, 65535, 1441799, 4, 65535, 1441799, 2, 0, 1441801, 3, 0, 1441801, 4, 0, 1441801, 5, 0, 1441801, 5, 65535, 1441799, 6, 0, 1441799, 7, 0, 1441799, 7, 1, 1441799, 6, 1, 15, 5, 1, 8, 65540, 65535, 7, 65541, 65535, 7, 6, 65535, 7, 65542, 65535, 7, 6, 65534, 7, 5, 65534, 7, 4, 65534, 7, 65542, 65534, 7, 65541, 65534, 7, 65540, 65534, 7, 131078, 65534, 7, 7, 65535, 25, 8, 65535, 25, 9, 65535, 25, 10, 65535, 25, 9, 0, 25, 10, 0, 25, 8, 0, 26, 10, 1, 1, 11, 0, 0, 12, 0, 0, 13, 0, 0, 11, 1, 28, 12, 1, 28, 13, 1, 1, 13, 65535, 1, 13, 65534, 1, 10, 65534, 1, 11, 65534, 1, 12, 65534, 1, 65547, 0, 6, 65548, 0, 3, 65549, 0, 3, 131085, 0, 4, 196621, 0, 2, 262157, 0, 5, 196614, 65534, 107, 131077, 65534, 107, 131078, 65535, 108, 65539, 65535, 135, 327686, 65533, 115, 262153, 65533, 114, 262145, 65533, 113, 65536, 0, 121, 131070, 65535, 109, 65535, 65535, 7, 65535, 1, 40, 0, 1, 40, 1, 1, 40, 0, 2, 40, 65533, 0, 40, 65531, 0, 40, 65544, 65535, 130, 65545, 65535, 111, 65546, 65535, 110, 11, 65535, 28, 12, 65535, 28, 4, 1, 18, 65542, 0, 105)
+}
+metadata/_editor_floor_ = Vector3(0, 1, 0)
+
+[node name="Character_Dev2" parent="." instance=ExtResource("2_c76i6")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 2, 1)
+
+[node name="Character_Boo2" parent="." instance=ExtResource("3_fsj77")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 2, 0)
+
+[node name="Character_Blob2" parent="." instance=ExtResource("4_q4j32")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 2, -1)
+
+[node name="Character_Speedy2" parent="." instance=ExtResource("5_5r7qg")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 21.2635, 2, 1)
+
+[node name="Obstacle_Ground_Spike_012" parent="." instance=ExtResource("2_wy2qa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 2, 1)
+
+[node name="Props_Treasure_Cheast_012" parent="." instance=ExtResource("3_0ayel")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 4, -3)
+
+[node name="Props_Wooden_Barrel_012" parent="." instance=ExtResource("4_m7rn3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 2, -1)
+
+[node name="Props_Wooden_Boat_012" parent="." instance=ExtResource("5_nlcfo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 5)
+
+[node name="Props_Wooden_Bridge_012" parent="." instance=ExtResource("6_6xpnk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.1, 0, 1)
+
+[node name="Props_Wooden_Dock_012" parent="." instance=ExtResource("7_pjphx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 3)
+
+[node name="Props_Flag_032" parent="." instance=ExtResource("12_26alx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27, 10.2946, 1)
+
+[node name="Props_Lever_012" parent="." instance=ExtResource("13_mhn72")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25, 4, 1)
+
+[node name="Collectable_Gift_Box_012" parent="." instance=ExtResource("14_f7mj7")]
+transform = Transform3D(0.886204, 0.463296, 0, -0.463296, 0.886204, 0, 0, 0, 1, 27, 2, 3)
+
+[node name="Collectable_Heart_012" parent="." instance=ExtResource("15_dy11y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 2, 3)
+
+[node name="Collectable_Diamond_012" parent="." instance=ExtResource("16_o15u7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 4, 1)
+
+[node name="Obstacle_Gound_Socket_012" parent="." instance=ExtResource("17_5hs4b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 2, 1)
+
+[node name="Obstacle_Gound_Socket_013" parent="." instance=ExtResource("17_5hs4b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 2, 1)
+
+[node name="Obstacle_Pole_012" parent="." instance=ExtResource("18_aklts")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 2, 1)
+
+[node name="Collectable_Coin_022" parent="." instance=ExtResource("19_iuyl4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 2.62227, 1)
+
+[node name="Collectable_Coin_023" parent="." instance=ExtResource("19_iuyl4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.8364, 2.62227, 1)
+
+[node name="Collectable_Coin_024" parent="." instance=ExtResource("19_iuyl4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.13993, 3.54351, 1)
+
+[node name="Collectable_Coin_025" parent="." instance=ExtResource("19_iuyl4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.70834, 3.54351, 1)
+
+[node name="Collectable_Coin_026" parent="." instance=ExtResource("19_iuyl4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.02283, 4.1874, 1)
+
+[node name="Collectable_Bomb_022" parent="." instance=ExtResource("20_3onh3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 5, -1)
+
+[node name="Collectable_Star_022" parent="." instance=ExtResource("21_d0y6a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 1.51227, 3)
+
+[node name="Collectable_Gems_022" parent="." instance=ExtResource("22_fffyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17, 1.75272, 1)
+
+[node name="Props_Spring_Jumper_012" parent="." instance=ExtResource("23_ey8xn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 2, 1)
+
+[node name="Props_Button_012" parent="." instance=ExtResource("24_3yi0l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 2, 1)
+
+[node name="Obstacle_Hanging_Hammer_Socket_012" parent="." instance=ExtResource("25_pfs4f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 6, 1)
+
+[node name="Obstacle_Round_Blade_012" parent="." instance=ExtResource("26_fagg8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 2, 1)

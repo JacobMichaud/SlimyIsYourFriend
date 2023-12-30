@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://vfqqw1d7d831"]
+
+[ext_resource type="PackedScene" uid="uid://27m1uytsknbv" path="res://Godot GameDev Starter Kit v1.0.0/Source Files/Character_Dev.glb" id="1_br5kc"]
+[ext_resource type="Material" uid="uid://wahx2363pja2" path="res://Godot GameDev Starter Kit v1.0.0/Materials/GameDev_Starter_Kit_Platformer.tres" id="2_1g5rh"]
+
+[node name="Character_Dev2" instance=ExtResource("1_br5kc")]
+
+[node name="Character_Dev" parent="Armature | Character_Dev/Skeleton3D" index="0"]
+surface_material_override/0 = ExtResource("2_1g5rh")
+
+[node name="Character_Dev_Pant" parent="Armature | Character_Dev/Skeleton3D" index="1"]
+surface_material_override/0 = ExtResource("2_1g5rh")
+
+[node name="Character_Dev_Shirt" parent="Armature | Character_Dev/Skeleton3D" index="2"]
+surface_material_override/0 = ExtResource("2_1g5rh")
