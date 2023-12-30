@@ -3,3 +3,5 @@
 [node name="Node3D" type="Node3D"]
 
 [node name="GridMap" type="GridMap" parent="."]
+
+[node name="Node3D" type="Node3D" parent="GridMap"]
