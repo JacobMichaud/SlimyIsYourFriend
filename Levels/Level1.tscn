@@ -4,4 +4,4 @@
 
 [node name="GridMap" type="GridMap" parent="."]
 
-[node name="Node3D" type="Node3D" parent="GridMap"]
+[node name="AudioListener3D" type="AudioListener3D" parent="GridMap"]
