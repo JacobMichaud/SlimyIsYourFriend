@@ -1,9 +1,0 @@
-[gd_scene load_steps=3 format=3 uid="uid://b7f2w4264dipj"]
-
-[ext_resource type="PackedScene" uid="uid://c3hgfjaih0m3t" path="res://Godot GameDev Starter Kit v1.0.0/Source Files/Plant_Tree_02.glb" id="1_vvlld"]
-[ext_resource type="Material" uid="uid://wahx2363pja2" path="res://Godot GameDev Starter Kit v1.0.0/Materials/GameDev_Starter_Kit_Platformer.tres" id="2_w6fk7"]
-
-[node name="Plant_Tree_022" instance=ExtResource("1_vvlld")]
-
-[node name="Plant_Tree_02" parent="." index="0"]
-surface_material_override/0 = ExtResource("2_w6fk7")

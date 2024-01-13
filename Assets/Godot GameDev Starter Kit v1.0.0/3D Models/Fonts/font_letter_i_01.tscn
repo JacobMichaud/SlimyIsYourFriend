@@ -1,9 +1,0 @@
-[gd_scene load_steps=3 format=3 uid="uid://b38nx7tb8sni2"]
-
-[ext_resource type="PackedScene" uid="uid://c3bcxqcs36exv" path="res://Godot GameDev Starter Kit v1.0.0/Source Files/Font_Letter_I_01.glb" id="1_ivc3w"]
-[ext_resource type="Material" uid="uid://wahx2363pja2" path="res://Godot GameDev Starter Kit v1.0.0/Materials/GameDev_Starter_Kit_Platformer.tres" id="2_ugryw"]
-
-[node name="Font_Letter_I_012" instance=ExtResource("1_ivc3w")]
-
-[node name="Font_Letter_I_01" parent="." index="0"]
-surface_material_override/0 = ExtResource("2_ugryw")
