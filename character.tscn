@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://df27vv46jp5ui"]
 
-[ext_resource type="Texture2D" uid="uid://21n7i4ykomr1" path="res://Assets/main character.aseprite" id="1_ag80g"]
+[ext_resource type="Texture2D" uid="uid://bwkunomr8mp15" path="res://Assets/main character.png" id="1_sdu5d"]
 
 [node name="Character" type="Node2D"]
 
@@ -10,5 +10,5 @@
 polygon = PackedVector2Array(-2, -58, -5, -56, -8, -49, -7, -42, -7, -34, -7, -27, -7, -12, -6, -3, -1, -3, -1, -12, -2, -19, -1, -26, 3, -25, 4, -20, 4, -15, 4, -10, 4, -6, 4, -3, 9, -3, 8, -9, 8, -25, 7, -28, 7, -42, 7, -47, 9, -51, 7, -56, 4, -58, 0, -59)
 
 [node name="MainCharacter" type="Sprite2D" parent="CharacterBody2D"]
-position = Vector2(2, -30)
-texture = ExtResource("1_ag80g")
+position = Vector2(1, -32)
+texture = ExtResource("1_sdu5d")
