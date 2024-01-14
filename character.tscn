@@ -1,40 +1,18 @@
-<<<<<<< HEAD
-[gd_scene load_steps=3 format=3 uid="uid://df27vv46jp5ui"]
+[gd_scene load_steps=4 format=3 uid="uid://df27vv46jp5ui"]
 
 [ext_resource type="PackedScene" uid="uid://s7teqq3388fr" path="res://Assets/main character.aseprite" id="1_ssugi"]
+[ext_resource type="Script" path="res://character.gd" id="2_ilbbv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_eh6ki"]
 size = Vector2(15, 59)
 
 [node name="Character" type="CharacterBody2D"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0.5, -31.5)
-shape = SubResource("RectangleShape2D_eh6ki")
+script = ExtResource("2_ilbbv")
 
 [node name="main character" parent="." instance=ExtResource("1_ssugi")]
 texture_filter = 3
 position = Vector2(2, -30)
-frame = 3
-frame_progress = 0.640008
-=======
-[gd_scene load_steps=4 format=3 uid="uid://df27vv46jp5ui"]
-
-[ext_resource type="Texture2D" uid="uid://bwkunomr8mp15" path="res://Assets/main character.png" id="1_sdu5d"]
-[ext_resource type="Script" path="res://character.gd" id="1_yti3o"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_qon0c"]
-size = Vector2(22, 60)
-
-[node name="CharacterBody2D" type="CharacterBody2D"]
-script = ExtResource("1_yti3o")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1, -30)
-shape = SubResource("RectangleShape2D_qon0c")
-
-[node name="MainCharacter" type="Sprite2D" parent="."]
-texture_filter = 3
-position = Vector2(1, -30)
-texture = ExtResource("1_sdu5d")
->>>>>>> 48e8e1283078514eaab23b807107c1168ca1fec7
+position = Vector2(0.5, -31.5)
+shape = SubResource("RectangleShape2D_eh6ki")

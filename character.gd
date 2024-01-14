@@ -1,13 +1,10 @@
 extends CharacterBody2D
 
-
+@onready var anim = $"main character"
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 
-# Get the gravity from the project settings to be synced with RigidBody nodes.
-var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
-
-func _physics_process(delta):
+func _process(delta):
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var direction = Input.get_axis("ui_left", "ui_right")
@@ -22,6 +19,7 @@ func _physics_process(delta):
 	elif Input.is_action_pressed("ui_down"):
 		velocity.y = SPEED * 0.9
 	else: 
+		anim.play("default")
 		velocity.y = 0
 	
 	move_and_slide()
