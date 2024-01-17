@@ -1,10 +1,70 @@
-[gd_scene load_steps=4 format=3 uid="uid://df27vv46jp5ui"]
+[gd_scene load_steps=16 format=3 uid="uid://df27vv46jp5ui"]
 
-[ext_resource type="PackedScene" uid="uid://c3ga6q0nc6xof" path="res://Assets/main character.aseprite" id="1_ssugi"]
+[ext_resource type="Texture2D" uid="uid://bnfm2wh5541fe" path="res://Assets/main character1.png" id="2_850o4"]
 [ext_resource type="Script" path="res://character.gd" id="2_ilbbv"]
+[ext_resource type="Texture2D" uid="uid://bt3xnjusq4hhp" path="res://Assets/main character2.png" id="3_txup4"]
+[ext_resource type="Texture2D" uid="uid://xcaf4r0hh1e0" path="res://Assets/main character3.png" id="4_0qraf"]
+[ext_resource type="Texture2D" uid="uid://15nxu10i4j7d" path="res://Assets/main character4.png" id="5_m8qlo"]
+[ext_resource type="Texture2D" uid="uid://dsfyrd1njl5l6" path="res://Assets/main character5.png" id="6_x8bb3"]
+[ext_resource type="Texture2D" uid="uid://bl3852dwe5eos" path="res://Assets/main character6.png" id="7_dqvfw"]
+[ext_resource type="Texture2D" uid="uid://cahjvjgctl4t" path="res://Assets/main character7.png" id="8_c52ji"]
+[ext_resource type="Texture2D" uid="uid://dyo46cl50ow7q" path="res://Assets/main character8.png" id="9_xdbja"]
+[ext_resource type="Texture2D" uid="uid://dnb4m8ijngd4a" path="res://Assets/main character9.png" id="10_0a437"]
+[ext_resource type="Texture2D" uid="uid://5eismphqywlc" path="res://Assets/main character10.png" id="11_y0xv4"]
+[ext_resource type="Texture2D" uid="uid://csnopod176fgh" path="res://Assets/main character11.png" id="12_rjava"]
+[ext_resource type="Texture2D" uid="uid://ba1b3h4hy3los" path="res://Assets/main character12.png" id="13_fxwea"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_eh6ki"]
 size = Vector2(15, 59)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nt6c1"]
+animations = [{
+"frames": [{
+"duration": 0.2,
+"texture": ExtResource("2_850o4")
+}, {
+"duration": 0.1,
+"texture": ExtResource("3_txup4")
+}, {
+"duration": 0.1,
+"texture": ExtResource("4_0qraf")
+}, {
+"duration": 0.1,
+"texture": ExtResource("5_m8qlo")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 0.1,
+"texture": ExtResource("6_x8bb3")
+}, {
+"duration": 0.1,
+"texture": ExtResource("7_dqvfw")
+}, {
+"duration": 0.1,
+"texture": ExtResource("8_c52ji")
+}, {
+"duration": 0.1,
+"texture": ExtResource("9_xdbja")
+}, {
+"duration": 0.1,
+"texture": ExtResource("10_0a437")
+}, {
+"duration": 0.1,
+"texture": ExtResource("11_y0xv4")
+}, {
+"duration": 0.1,
+"texture": ExtResource("12_rjava")
+}, {
+"duration": 0.1,
+"texture": ExtResource("13_fxwea")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 8.0
+}]
 
 [node name="Character" type="CharacterBody2D"]
 script = ExtResource("2_ilbbv")
@@ -13,8 +73,8 @@ script = ExtResource("2_ilbbv")
 position = Vector2(0.5, -31.5)
 shape = SubResource("RectangleShape2D_eh6ki")
 
-[node name="main character" parent="." instance=ExtResource("1_ssugi")]
+[node name="main character" type="AnimatedSprite2D" parent="."]
 texture_filter = 3
 position = Vector2(2, -31)
-animation = &"Walk"
-frame_progress = 0.473403
+sprite_frames = SubResource("SpriteFrames_nt6c1")
+animation = &"idle"

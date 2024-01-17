@@ -14,18 +14,18 @@ func _process(delta):
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 	if velocity.x >0:
 		anim.flip_h = false
-		anim.play("Walk")
+		anim.play("walk")
 	elif velocity.x <0:
 		anim.flip_h = true
-		anim.play("Walk")
+		anim.play("walk")
 	
 	#Vertical movement (needs the speed to be changed a bit so it feels more realistic)
 	if Input.is_action_pressed("up"):
 		velocity.y = -SPEED * 0.9
-		anim.play("Walk")
+		anim.play("walk")
 	elif Input.is_action_pressed("down"):
 		velocity.y = SPEED * 0.9
-		anim.play("Walk")
+		anim.play("walk")
 	else: 	
 		velocity.y = 0
 	if velocity.x ==0 && velocity.y ==0:
