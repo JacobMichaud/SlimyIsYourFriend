@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://df27vv46jp5ui"]
 
-[ext_resource type="PackedScene" uid="uid://s7teqq3388fr" path="res://Assets/main character.aseprite" id="1_ssugi"]
+[ext_resource type="PackedScene" uid="uid://c3ga6q0nc6xof" path="res://Assets/main character.aseprite" id="1_ssugi"]
 [ext_resource type="Script" path="res://character.gd" id="2_ilbbv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_eh6ki"]
@@ -9,10 +9,12 @@ size = Vector2(15, 59)
 [node name="Character" type="CharacterBody2D"]
 script = ExtResource("2_ilbbv")
 
-[node name="main character" parent="." instance=ExtResource("1_ssugi")]
-texture_filter = 3
-position = Vector2(2, -30)
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, -31.5)
 shape = SubResource("RectangleShape2D_eh6ki")
+
+[node name="main character" parent="." instance=ExtResource("1_ssugi")]
+texture_filter = 3
+position = Vector2(2, -31)
+animation = &"Walk"
+frame_progress = 0.473403
