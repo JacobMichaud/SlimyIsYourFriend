@@ -5,4 +5,6 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="Character" parent="." instance=ExtResource("1_3uo2x")]
+texture_filter = 4
 position = Vector2(612, 310)
+scale = Vector2(1.5, 1.5)
