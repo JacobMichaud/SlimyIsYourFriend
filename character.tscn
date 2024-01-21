@@ -82,6 +82,7 @@ sprite_frames = SubResource("SpriteFrames_nt6c1")
 animation = &"walk"
 
 [node name="Marker2D" type="Marker2D" parent="."]
+visible = false
 
 [node name="ActionableFinder" type="Area2D" parent="Marker2D"]
 light_mask = 16

@@ -20,7 +20,6 @@ func _unhandled_input(event: InputEvent) -> void:
 func _process(delta):
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
-	
 	if Global.inDialogue == false:
 		var direction = Input.get_axis("left", "right")
 		if direction:
@@ -49,4 +48,5 @@ func _process(delta):
 		velocity.x = 0
 		velocity.y = 0
 		anim.play("idle")
+	
 	move_and_slide()

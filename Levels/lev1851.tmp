@@ -7719,5 +7719,5 @@ texture_filter = 4
 scale = Vector2(5.935, 5.935)
 shape = SubResource("CircleShape2D_d3w1x")
 
-[node name="Goblin" parent="." instance=ExtResource("12_30p5v")]
-position = Vector2(47, 115)
+[node name="CharacterBody2D" parent="." instance=ExtResource("12_30p5v")]
+position = Vector2(613, 111)
