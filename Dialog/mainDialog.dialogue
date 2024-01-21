@@ -1,0 +1,9 @@
+~ start
+if Global.NPC == "home":
+	Steve: I need to go hunt for more food.
+	Steve: The kids are depending on me.
+	Steve: I know a good spot in the Eastern Forest.
+elif Global.NPC == "forest":
+	You hear branches snapping in the woods.
+set Global.inDialogue = false
+=> END

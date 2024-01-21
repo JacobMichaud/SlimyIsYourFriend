@@ -7691,6 +7691,7 @@ layer_3/name = "decor"
 layer_3/tile_data = PackedInt32Array()
 
 [node name="Character" parent="." instance=ExtResource("1_3uo2x")]
+
 position = Vector2(-328, 159)
 scale = Vector2(1.5, 1.5)
 
@@ -7714,3 +7715,8 @@ dialogue_resource = ExtResource("11_7mh5q")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="forest"]
 scale = Vector2(9.26, 9.26)
 shape = SubResource("CircleShape2D_d3w1x")
+
+texture_filter = 4
+position = Vector2(612, 310)
+scale = Vector2(1.5, 1.5)
+

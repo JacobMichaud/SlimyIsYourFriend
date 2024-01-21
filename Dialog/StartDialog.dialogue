@@ -1,0 +1,7 @@
+~ Start
+set global.inDialogue = true
+Steve: I have to go hunt for more food. (space to continue...)
+Steve: I know its dangerous... but if I don't the kids will starve.
+Steve: I know a good hunting spot in the Eastern Forest.
+set global.inDialogue = false
+=> END
