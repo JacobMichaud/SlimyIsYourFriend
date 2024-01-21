@@ -10,8 +10,8 @@ var inDialogue = false
 func _unhandled_input(event: InputEvent) -> void:
 	if Input.is_action_just_pressed("ui_accept"):
 		var actionables = actionable_finder.get_overlapping_areas()
-		Global.NPC = actionables[0].name
 		if actionables.size() > 0:
+			Global.NPC = actionables[0].name
 			Global.inDialogue = true
 			actionables[0].action()
 			return

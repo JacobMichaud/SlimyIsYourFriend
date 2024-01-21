@@ -94,4 +94,3 @@ visibility_layer = 16
 position = Vector2(1, -30)
 scale = Vector2(4.065, 4.065)
 shape = SubResource("CircleShape2D_ltlco")
-

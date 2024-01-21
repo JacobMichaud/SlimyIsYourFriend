@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://bgmu6m56qeeqx"]
+[gd_scene load_steps=23 format=3 uid="uid://b2i2htv3xotxo"]
 
 [ext_resource type="PackedScene" uid="uid://df27vv46jp5ui" path="res://character.tscn" id="1_3uo2x"]
 [ext_resource type="Texture2D" uid="uid://dq1yif6sr1if2" path="res://Assets/tile assets/Forest Tilesett.png" id="2_7a1tx"]
@@ -7691,7 +7691,6 @@ layer_3/name = "decor"
 layer_3/tile_data = PackedInt32Array()
 
 [node name="Character" parent="." instance=ExtResource("1_3uo2x")]
-
 position = Vector2(-328, 159)
 scale = Vector2(1.5, 1.5)
 
@@ -7709,14 +7708,10 @@ scale = Vector2(5.775, 5.775)
 shape = SubResource("CircleShape2D_iiwga")
 
 [node name="forest" parent="." instance=ExtResource("10_i5vv0")]
-position = Vector2(64, 58)
+position = Vector2(4.84, -1.275)
 dialogue_resource = ExtResource("11_7mh5q")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="forest"]
-scale = Vector2(9.26, 9.26)
-shape = SubResource("CircleShape2D_d3w1x")
-
 texture_filter = 4
-position = Vector2(612, 310)
-scale = Vector2(1.5, 1.5)
-
+scale = Vector2(5.935, 5.935)
+shape = SubResource("CircleShape2D_d3w1x")
